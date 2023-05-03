@@ -17,9 +17,6 @@ reg.fit(X_train, Y_train)
 Y_pred = reg.predict(X_test)
 
 print("w = ", reg.coef_)
-print("Mean squared error: ", mean_squared_error(Y_test, Y_pred))
-print("Coefficient of determination: ", r2_score(Y_test, Y_pred))
-
 
 plt.scatter(X_test, Y_test, c='black')
 plt.plot(X_test, Y_pred, c='blue', linewidth=3)
